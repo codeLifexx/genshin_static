@@ -1,0 +1,315 @@
+/* 修改头部导航样式 */
+.nav ul .nav-box {
+    left: 122px;
+    background-color: rgb(105, 224, 255);
+}
+
+.nav ul li:nth-child(1):hover~.nav-box {
+    left: 28px;
+    background-color: rgb(105, 224, 255);
+}
+
+.first a {
+    color: #ccc;
+    text-shadow: none;
+}
+
+.sec a {
+    color: white;
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+
+/* 背景图 */
+.content_news {
+    width: 100%;
+    height: 700px;
+    background: url(../genshinImg/新闻背景图.jpg);
+}
+
+.icon_nav,
+.icon_nav ul,
+.icon_nav ul li {
+    margin-top: 0;
+}
+
+.news_title {
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a {
+    width: 270px;
+    height: 420px;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: .8s;
+}
+
+.b,
+.c,
+.d,
+.e,
+.f {
+    width: 270px;
+    height: 400px;
+    position: absolute;
+    /* 翻页起点 */
+    transform-origin: left;
+    background-size: cover;
+    /* 翻页时元素之间的延时 */
+    transition: calc(var(--i)*.3s);
+    /* 这是翻页时元素的层级 */
+    z-index: calc(var(--i)*99);
+    /* 给元素添加边框 */
+    border: 20px solid pink;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+
+}
+
+.a:hover .b {
+    border-left: 20px solid pink;
+}
+
+.a:hover .c,
+.a:hover .d,
+.a:hover .e,
+.a:hover .f {
+    transform: rotateY(-180deg);
+    /* 此时翻页顺序颠倒  所以延时与层级也要反一下 */
+    transition: calc(var(--s)*.4s);
+    z-index: calc(var(--s)*99);
+}
+
+.a:hover {
+    transform: translateX(140px);
+}
+
+
+
+
+/* 新闻大块 */
+.newslist_all ul:first-child {
+    height: 112px;
+    line-height: 112px;
+    list-style-type: none;
+}
+
+.newslist_all ul:first-child li{
+    display: inline-block;
+    min-width: 155px;
+    height: 36px;
+    line-height: 36px;
+    background-color: rgba(57, 59, 64, 0.18);
+    color: #393b40;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all 0.2s 0s ease;
+}
+
+.news__item {
+    cursor: pointer;
+}
+.newslist_all ul:first-child li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.news {
+    list-style-type: none;
+    height: auto;
+    transition: all 0.5s 0s ease;
+}
+
+.news__item::before {
+    display: block;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -3px;
+    bottom: -3px;
+    left: -3px;
+    right: -3px;
+    border: 3px solid rgba(57, 59, 64, 0.15);
+    border-radius: 4px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.news__tag-2 {
+    border-left-color: #ffc000;
+}
+
+.news__item {
+    position: relative;
+    min-height: 170px;
+    background-color: #fafafa;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.news__content {
+    display: flex;
+}
+
+.news__title {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 24px;
+    color: #393b40;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.news__content {
+    display: flex;
+}
+
+.news__content img {
+    width: 265px;
+    height: 140px;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+.news__info {
+    width: calc(100% - 285px);
+}
+
+.news__info h3 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.news__info p {
+    line-height: 22px;
+}
+
+.news__summary {
+    position: relative;
+    margin-top: 11px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #7d7d7d;
+    overflow: hidden;
+    word-wrap: break-word;
+    white-space: normal;
+    margin-bottom: 20px;
+}
+
+.news__meta {
+    position: absolute;
+    z-index: 1;
+    bottom: 16px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 300px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.news__date {
+    color: #999;
+}
+
+.news__category,
+.news__date {
+    width: 120px;
+    text-align: right;
+}
+
+.news__category {
+    width: auto;
+    text-decoration: none;
+    cursor: pointer;
+    margin-left: 56px;
+    color: #FDCD00;
+}
+
+.news__item:hover::before {
+    opacity: 1;
+}
+
+.newslist_all ul:first-child li:hover
+{
+    background-color: #393b40;
+    color: #f4d8a8;
+}
+
+
+
+.news_more{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 40px;
+    opacity: .8;
+    border-radius: 5px;
+}
+.news_more a{
+    display: inline-block;
+    width: 100%;
+    height: 40px;
+}
+.news_more button{
+    width: 100%;
+    height: 40px;
+    background-color:#393b40;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    border-radius: 5px;
+}
+.news_more a:hover button{
+    opacity: .9;
+    transition: .3;
+}
+
+.news_body{
+    position: relative;
+    background-color: #EEEEEE;
+    height: 1300px;
+}
+.last_img{
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+.news li{
+    position: relative;
+    z-index: 1;
+}

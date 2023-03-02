@@ -1,0 +1,169 @@
+/* 修改头部导航样式 */
+.nav ul .nav-box {
+    left: 404px;
+    background-color: rgb(105, 224, 255);
+}
+
+.nav ul li:nth-child(1):hover~.nav-box {
+    left: 28px;
+    background-color: rgb(105, 224, 255);
+}
+
+.first a {
+    color: #ccc;
+    text-shadow: none;
+}
+
+.five a {
+    color: white;
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+header{
+    display: flex;
+}
+
+
+
+.an-bJ{
+    width: 100%;
+    height: 590px;
+    background: transparent url(../漫画img/温迪.jpg) no-repeat 0 0;
+    background-size: 100% 100%;
+    visibility: visible;
+}
+
+
+.BIAO-TI {
+    width: 688px;
+    height: 315px;
+    position: absolute;
+    top: 230px;
+    left: 200px;
+}
+.BIAO-TI p {
+    padding-top: 5px;
+    font-weight: bold;
+    margin-left: 41px;
+    font-size: 16px;
+}
+.BIAO-TI .ponj {
+    font-size: 36px;
+    font-weight: normal;
+}
+
+
+.AN-NI {
+    margin-left: 41px;
+}
+
+.AN-NI button {
+    width: 175px;
+    background-color: #17B8ED;
+    border: 0 solid;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.AN-NI button a {
+    width: 175px;
+    display: block;
+    line-height: 35px;
+    color: rgba(247, 247, 247, 0.842);
+    font-size: 15px;
+}
+
+.AN-NI #btn2 {
+    background-color: #1F353D;
+}
+
+
+.AN-NI button:hover {
+    opacity: 0.75;
+    transition: all 0.5s 0s ease;
+    border-radius: 15px;
+    background-color: rgb(57, 184, 238);
+}
+
+button a:active {
+    color: rgb(236, 168, 67);
+    font-weight: 700px;
+    font-size: 16px;
+}
+
+.BIAO-TI:hover {
+    opacity: 0.75;
+    transition: all 0.5s 0s ease;
+    border-radius: 46px;
+    background: #C0E0E4;
+    box-shadow: 23px 23px 46px #f3f3f3, -23px -23px 46px #daffff;
+}
+
+
+
+#btn2 {
+    height: 40px;
+    width: 175px;
+    background-color: #17B8ED;
+    border: 0 solid;
+    border-radius: 5px;
+    color: #f3f3f3;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#btn2:hover {
+    opacity: 0.75;
+    transition: all 0.5s 0s ease;
+    border-radius: 15px;
+    background-color: rgb(57, 184, 238);
+}
+
+
+.CLone{
+    overflow: hidden;
+    background-color: rgb(#FCFCFC);
+}
+
+.CLone ul li {
+    list-style: none;
+    width: 304px;
+    height: 170px;
+    float: left;
+    margin-left: 18px;
+    border: solid 1px black;
+    margin-bottom: 15px;
+}
+
+
+.CLone ul li{
+    position: relative;
+    overflow: hidden;
+}
+
+.CLone a p {
+    position: absolute;
+    bottom: -2px;
+    font-size: 18px;
+    color: aliceblue;
+    width: 304px;
+    height: 36px;
+    background-color: rgba(56, 54, 53, 0.7);
+    line-height: 36px;
+    text-align: center;
+}
+
+.CLone {
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.CLone ul li img{
+    filter: brightness(0.7);
+}
+
+.CLone ul li:hover img{
+    transform: scale(1.2);
+    filter: brightness(1);
+    transition:all .5s linear;
+}

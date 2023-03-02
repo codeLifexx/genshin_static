@@ -1,0 +1,614 @@
+/* 头部 */
+header {
+    width: 100%;
+    height: 66px;
+    background-color: rgba(0, 0, 0, .7);
+    min-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgb(0 0 0 / 20%);
+}
+
+.head_logo,
+.nav,
+.head_right {
+    display: flex;
+    line-height: 66px;
+}
+
+header a {
+    color: #ccc;
+    font-size: 17px;
+}
+
+.nav {
+    width: 600px;
+    height: 66px;
+    position: relative;
+    right: 50px;
+}
+
+.nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav ul .nav-box {
+    position: absolute;
+    top: 0;
+    left: 28px;
+    width: 40px;
+    height: 5px;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.nav ul li {
+    width: 94px;
+    text-align: center;
+}
+
+.nav ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+}
+
+.nav-box {
+    left: 28px;
+    background-color: rgb(105, 224, 255);
+}
+
+.nav ul li:nth-child(2):hover~.nav-box {
+    left: 122px;
+    background-color: rgb(105, 224, 255);
+}
+
+.nav ul li:nth-child(3):hover~.nav-box {
+    left: 216px;
+    background-color: rgb(105, 224, 255);
+}
+
+.nav ul li:nth-child(4):hover~.nav-box {
+    left: 310px;
+    background-color: rgb(105, 224, 255);
+}
+
+.nav ul li:nth-child(5):hover~.nav-box {
+    left: 404px;
+    background-color: rgb(105, 224, 255);
+}
+
+.nav ul li:nth-child(6):hover~.nav-box {
+    left: 498px;
+    background-color: rgb(105, 224, 255);
+}
+
+.first a {
+    color: white;
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+.nav ul li:hover a {
+    color: white;
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+
+.nav ul li:nth-child(2):hover~.first>a {
+    color: #ccc !important;
+    text-shadow: 0 !important;
+}
+
+
+.head_logo>a {
+    display: flex;
+    width: 317px;
+    height: 66px;
+    align-items: center;
+    background: url(../genshinImg/导航logo.png) center no-repeat;
+}
+
+.head_logo a img {
+    width: 30px;
+    height: 30px;
+    margin-left: 40px;
+}
+
+.head_logo {
+    margin-left: 30px;
+}
+
+.head_right div {
+    margin-right: 40px;
+}
+
+.head_right span {
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.head_right img {
+    vertical-align: middle;
+    opacity: 0.6;
+}
+
+.head_right a:hover {
+    color: #fff;
+}
+
+.head_logo img {
+    opacity: 0.6;
+}
+
+.head_right a:hover img,
+.head_logo a:hover img {
+    opacity: 1;
+}
+
+.head_right div:first-child {
+    width: 152px;
+}
+
+.head_right div:last-child {
+    width: 84px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99999;
+}
+img{
+    transition: all .3s;
+}
+
+
+
+/* 底部分享 */
+.icon_nav {
+    width: 100%;
+    height: 52px;
+    margin-top: 260px;
+    background-color: #111111;
+    margin: 0 auto;
+    line-height: 52px;
+}
+
+.icon_nav ul {
+    width: 100%;
+    height: 52px;
+    margin-top: 260px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_nav ul li {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 38px;
+}
+
+.icon_nav ul span {
+    font-size: 28px;
+    color: #707070;
+}
+
+.icon_nav ul li:hover span {
+    color: white;
+}
+
+.lastfen{
+    position: relative;
+}
+.icon_nav .lastfen ul{
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.icon_nav .lastfen ul li{
+    text-align: center;
+    margin: 0;
+}
+
+.icon_nav .lastfen .fenxiang ul li:first-child a span{
+    color: yellow;
+    font-size: 30px;
+}
+.icon_nav .lastfen .fenxiang ul li:nth-child(2) a span{
+    color: blueviolet;
+}
+.icon_nav .lastfen .fenxiang ul li:nth-child(3) a span{
+    color: yellowgreen;
+    font-size: 30px;
+}
+.icon_nav .lastfen .fenxiang ul li:nth-child(4) a span{
+    color: slategray;
+}
+
+.icon_nav .lastfen .fenxiang{
+    width: 300px;
+    background-color: rgba(255,255,255, .8);
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    position: absolute;
+    top: 52px;
+    right: 0;
+    z-index: 99999;
+}
+.icon_nav .lastfen:hover .fenxiang{
+    height: 100px;
+}
+.icon_nav .lastfen .fenxiang p{
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+/* 底部 */
+.footer {
+    width: 100%;
+    background-color: #000000;
+    color: #999;
+}
+
+.footer a {
+    color: #999;
+}
+
+.footer-content {
+    height: 343px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer-link {
+    margin-bottom: 50px;
+}
+
+.footer .footer-link a {
+    margin-right: 10px;
+    color: white;
+}
+
+.footer .footer-link a:hover {
+    color: red;
+}
+
+.footer-logo {
+    margin-right: 50px;
+}
+
+.footer-logo span {
+    text-align: center;
+    width: 50px;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+
+.icon_nav,
+.icon_nav ul,
+.icon_nav ul li {
+    margin-top: 0;
+}
+
+
+
+/* 跳动的笑脸 */
+.my-face {
+    animation: my-face 5s infinite ease-in-out;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+@-webkit-keyframes my-face {
+
+    2%,
+    24%,
+    80% {
+        -webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+        transform: translate(0, 1.5px) rotate(1.5deg)
+    }
+
+    4%,
+    68%,
+    98% {
+        -webkit-transform: translate(0, -1.5px) rotate(-.5deg);
+        transform: translate(0, -1.5px) rotate(-.5deg)
+    }
+
+    38%,
+    6% {
+        -webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+        transform: translate(0, 1.5px) rotate(-1.5deg)
+    }
+
+    8%,
+    86% {
+        -webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+        transform: translate(0, -1.5px) rotate(-1.5deg)
+    }
+
+    10%,
+    72% {
+        -webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+        transform: translate(0, 2.5px) rotate(1.5deg)
+    }
+
+    12%,
+    64%,
+    78%,
+    96% {
+        -webkit-transform: translate(0, -.5px) rotate(1.5deg);
+        transform: translate(0, -.5px) rotate(1.5deg)
+    }
+
+    14%,
+    54% {
+        -webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+        transform: translate(0, -1.5px) rotate(1.5deg)
+    }
+
+    16% {
+        -webkit-transform: translate(0, -.5px) rotate(-1.5deg);
+        transform: translate(0, -.5px) rotate(-1.5deg)
+    }
+
+    18%,
+    22% {
+        -webkit-transform: translate(0, .5px) rotate(-1.5deg);
+        transform: translate(0, .5px) rotate(-1.5deg)
+    }
+
+    20%,
+    36%,
+    46% {
+        -webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+        transform: translate(0, -1.5px) rotate(2.5deg)
+    }
+
+    26%,
+    50% {
+        -webkit-transform: translate(0, .5px) rotate(.5deg);
+        transform: translate(0, .5px) rotate(.5deg)
+    }
+
+    28% {
+        -webkit-transform: translate(0, .5px) rotate(1.5deg);
+        transform: translate(0, .5px) rotate(1.5deg)
+    }
+
+    30%,
+    40%,
+    62%,
+    76%,
+    88% {
+        -webkit-transform: translate(0, -.5px) rotate(2.5deg);
+        transform: translate(0, -.5px) rotate(2.5deg)
+    }
+
+    32%,
+    34%,
+    66% {
+        -webkit-transform: translate(0, 1.5px) rotate(-.5deg);
+        transform: translate(0, 1.5px) rotate(-.5deg)
+    }
+
+    42% {
+        -webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+        transform: translate(0, 2.5px) rotate(-1.5deg)
+    }
+
+    44%,
+    70% {
+        -webkit-transform: translate(0, 1.5px) rotate(.5deg);
+        transform: translate(0, 1.5px) rotate(.5deg)
+    }
+
+    48%,
+    74%,
+    82% {
+        -webkit-transform: translate(0, -.5px) rotate(.5deg);
+        transform: translate(0, -.5px) rotate(.5deg)
+    }
+
+    52%,
+    56%,
+    60% {
+        -webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+        transform: translate(0, 2.5px) rotate(2.5deg)
+    }
+
+    58% {
+        -webkit-transform: translate(0, .5px) rotate(2.5deg);
+        transform: translate(0, .5px) rotate(2.5deg)
+    }
+
+    84% {
+        -webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+        transform: translate(0, 1.5px) rotate(2.5deg)
+    }
+
+    90% {
+        -webkit-transform: translate(0, 2.5px) rotate(-.5deg);
+        transform: translate(0, 2.5px) rotate(-.5deg)
+    }
+
+    92% {
+        -webkit-transform: translate(0, .5px) rotate(-.5deg);
+        transform: translate(0, .5px) rotate(-.5deg)
+    }
+
+    94% {
+        -webkit-transform: translate(0, 2.5px) rotate(.5deg);
+        transform: translate(0, 2.5px) rotate(.5deg)
+    }
+
+    0%,
+    100% {
+        -webkit-transform: translate(0, 0) rotate(0);
+        transform: translate(0, 0) rotate(0)
+    }
+}
+
+@keyframes my-face {
+
+    2%,
+    24%,
+    80% {
+        -webkit-transform: translate(0, 1.5px) rotate(1.5deg);
+        transform: translate(0, 1.5px) rotate(1.5deg)
+    }
+
+    4%,
+    68%,
+    98% {
+        -webkit-transform: translate(0, -1.5px) rotate(-.5deg);
+        transform: translate(0, -1.5px) rotate(-.5deg)
+    }
+
+    38%,
+    6% {
+        -webkit-transform: translate(0, 1.5px) rotate(-1.5deg);
+        transform: translate(0, 1.5px) rotate(-1.5deg)
+    }
+
+    8%,
+    86% {
+        -webkit-transform: translate(0, -1.5px) rotate(-1.5deg);
+        transform: translate(0, -1.5px) rotate(-1.5deg)
+    }
+
+    10%,
+    72% {
+        -webkit-transform: translate(0, 2.5px) rotate(1.5deg);
+        transform: translate(0, 2.5px) rotate(1.5deg)
+    }
+
+    12%,
+    64%,
+    78%,
+    96% {
+        -webkit-transform: translate(0, -.5px) rotate(1.5deg);
+        transform: translate(0, -.5px) rotate(1.5deg)
+    }
+
+    14%,
+    54% {
+        -webkit-transform: translate(0, -1.5px) rotate(1.5deg);
+        transform: translate(0, -1.5px) rotate(1.5deg)
+    }
+
+    16% {
+        -webkit-transform: translate(0, -.5px) rotate(-1.5deg);
+        transform: translate(0, -.5px) rotate(-1.5deg)
+    }
+
+    18%,
+    22% {
+        -webkit-transform: translate(0, .5px) rotate(-1.5deg);
+        transform: translate(0, .5px) rotate(-1.5deg)
+    }
+
+    20%,
+    36%,
+    46% {
+        -webkit-transform: translate(0, -1.5px) rotate(2.5deg);
+        transform: translate(0, -1.5px) rotate(2.5deg)
+    }
+
+    26%,
+    50% {
+        -webkit-transform: translate(0, .5px) rotate(.5deg);
+        transform: translate(0, .5px) rotate(.5deg)
+    }
+
+    28% {
+        -webkit-transform: translate(0, .5px) rotate(1.5deg);
+        transform: translate(0, .5px) rotate(1.5deg)
+    }
+
+    30%,
+    40%,
+    62%,
+    76%,
+    88% {
+        -webkit-transform: translate(0, -.5px) rotate(2.5deg);
+        transform: translate(0, -.5px) rotate(2.5deg)
+    }
+
+    32%,
+    34%,
+    66% {
+        -webkit-transform: translate(0, 1.5px) rotate(-.5deg);
+        transform: translate(0, 1.5px) rotate(-.5deg)
+    }
+
+    42% {
+        -webkit-transform: translate(0, 2.5px) rotate(-1.5deg);
+        transform: translate(0, 2.5px) rotate(-1.5deg)
+    }
+
+    44%,
+    70% {
+        -webkit-transform: translate(0, 1.5px) rotate(.5deg);
+        transform: translate(0, 1.5px) rotate(.5deg)
+    }
+
+    48%,
+    74%,
+    82% {
+        -webkit-transform: translate(0, -.5px) rotate(.5deg);
+        transform: translate(0, -.5px) rotate(.5deg)
+    }
+
+    52%,
+    56%,
+    60% {
+        -webkit-transform: translate(0, 2.5px) rotate(2.5deg);
+        transform: translate(0, 2.5px) rotate(2.5deg)
+    }
+
+    58% {
+        -webkit-transform: translate(0, .5px) rotate(2.5deg);
+        transform: translate(0, .5px) rotate(2.5deg)
+    }
+
+    84% {
+        -webkit-transform: translate(0, 1.5px) rotate(2.5deg);
+        transform: translate(0, 1.5px) rotate(2.5deg)
+    }
+
+    90% {
+        -webkit-transform: translate(0, 2.5px) rotate(-.5deg);
+        transform: translate(0, 2.5px) rotate(-.5deg)
+    }
+
+    92% {
+        -webkit-transform: translate(0, .5px) rotate(-.5deg);
+        transform: translate(0, .5px) rotate(-.5deg)
+    }
+
+    94% {
+        -webkit-transform: translate(0, 2.5px) rotate(.5deg);
+        transform: translate(0, 2.5px) rotate(.5deg)
+    }
+
+    0%,
+    100% {
+        -webkit-transform: translate(0, 0) rotate(0);
+        transform: translate(0, 0) rotate(0)
+    }
+}

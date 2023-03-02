@@ -1,0 +1,158 @@
+/* 修改头部导航样式 */
+.nav ul .nav-box {
+    left: 216px;
+    background-color: rgb(105, 224, 255);
+}
+
+.nav ul li:nth-child(1):hover~.nav-box {
+    left: 28px;
+    background-color: rgb(105, 224, 255);
+}
+
+.first a {
+    color: #ccc;
+    text-shadow: none;
+}
+
+.third a {
+    color: white;
+    text-shadow: 0 0 10px #69e0ff, 0 0 20px #69e0ff, 0 0 40px #69e0ff;
+}
+header{
+    display: flex;
+}
+
+.qiyuan_video{
+    position: relative;
+    top: 66px;
+}
+.icon_nav,.footer{
+    position: relative;
+}
+
+.aside_nav{
+    height: 496px;
+    position: absolute;
+    top:10%;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+
+.aside_nav ul{
+    width: 80px;
+    height: 200px;
+    background-color: rgba(255,255,255,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.aside_nav ul li{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.aside_nav ul li a{
+    width: 180px;
+    font-size: 14px;
+    color: #5c5c5c;
+}
+.aside_nav ul li:first-child{
+    margin-top: 8px;
+}
+.aside_nav ul li a:hover{
+    font-weight: bold;
+}
+
+.slide_detail,.liyue{
+    width: 0;
+    height: 520px;
+    overflow: hidden;
+    /* background-color: rgba(255,182,193, .8); */
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: width 2s;
+    top: 0;
+    left: 120px;
+    z-index: 9999;
+    
+}
+.aside_nav ul .md:hover .mengde,
+.aside_nav ul .xl:hover .liyue,
+.aside_nav ul .xd:hover .daoqi,
+.aside_nav ul .xm:hover .xumi
+{
+    width: 1500px;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+}
+
+
+
+
+
+.aside_nav ul li:hover{
+    background-color: rgba(255,182,193, .3);
+}
+
+.shell{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.box{
+    flex: 1;
+    overflow: hidden;
+    margin: 0 10px;
+    /* background-color: rgba(255,182,193, .3); */
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+.box>img{
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.box:hover{
+    flex-basis: 40%;
+}
+.box>img:hover{
+    width: 100%;
+    height: 100%;
+}
+
+.box span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15%;
+    margin-top: -20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nan{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    margin-left: -200px;
+}
+.nan span{
+    color: red;
+    font-size: 32px;
+}

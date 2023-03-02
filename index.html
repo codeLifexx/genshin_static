@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .imgq {
+            position: absolute;
+            background-size: cover;
+        }
+
+        .swiper {
+            position: relative;
+            left: -140px;
+            width: 640px;
+            height: 400px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: rgba(38, 18, 12, 0.62);
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-pagination-bullet {
+            height: 18px;
+            width: 18px;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="genshin">
+        <!-- 头部 -->
+        <header>
+            <div class="head_logo">
+                <a href="">
+                    <img src="./genshinImg/静音.png" alt="">
+                </a>
+                <div class="nav">
+                    <ul>
+                        <li class="first"><a href="./index.html">首页</a></li>
+                        <li><a href="./news.html">新闻</a></li>
+                        <li><a href="./role.html">角色</a></li>
+                        <li><a href="./world.html">世界</a></li>
+                        <li><a href="./cartoon.html">漫画</a></li>
+                        <li><a href="https://www.miyoushe.com/ys/" target="_blank">社区</a></li>
+                        <div class="nav-box"></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="head_right">
+                <div><a href=""><span>成长关爱系统</span><img src="./genshinImg/关爱.png" alt=""></a></div>
+                <div>
+                    <a href=""><span>登录</span><img src="./genshinImg/登录.png" alt=""></a>
+                </div>
+            </div>
+        </header>
+        <!-- 视频部分 -->
+        <div class="bgWrap">
+            <div class="poster__concept">
+                <video width="100%" loop="loop" muted="muted" autoplay>
+                    <source src="audio/首页背景视频.mp4" type="audio/mp4">
+                </video>
+            </div>
+
+
+            <div class="showitem">
+                <div class="twelve">
+                    <img src="./genshinImg/12+.png">
+                </div>
+                <div class="qisheng">
+                    <a href=""><img src="./genshinImg/七圣召唤.png"></a>
+                </div>
+                <!-- 播放按钮 -->
+                <div class="video_play">
+                    <img src="./genshinImg/中间播放功能.png">
+                    <button class="play_video">
+    
+                    </button>
+                    <div class="play_videoSjx"></div>
+                </div>
+                <!-- 下载部分 -->
+                <ul class="ys_download">
+                    <li>
+                        <img class="ys_ewm" src="./genshinImg/首页二维码.png">
+                        <img class="ys_paim" src="./genshinImg/派蒙.jfif">
+                    </li>
+                    <li class="ys_pingtai">
+                        <a class="ps4" href=""><img width="160px" height="52px" src="./genshinImg/PS4.png"></a>
+                        <a class="appel" href=""><img width="160px" height="52px" src="./genshinImg/苹果.png"></a>
+                    </li>
+                    <li class="ys_pingtai">
+                        <a class="tap" href=""><img width="160px" height="52px" src="./genshinImg/Tap.png"></a>
+                        <a class="anzhuo" href=""><img width="160px" height="52px" src="./genshinImg/安卓.png"></a>
+                    </li>
+                    <li class="ys_pc">
+                        <a href=""><img src="./genshinImg/PC.png" alt=""></a>
+                    </li>
+                </ul>
+
+                <ul class="jiazai">
+                    <li><img src="./genshinImg/加载.png" alt=""></li>
+                    <li><img src="./genshinImg/加载.png" alt=""></li>
+                    <li><img src="./genshinImg/加载.png" alt=""></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <!-- 新闻资讯 -->
+        <div class="message">
+            <h3>新闻资讯</h3>
+            <!-- 新闻块 -->
+            <div class="new_Boom">
+                <!-- 轮播图 -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <li>
+                                <a href="javascript:;"><img src="./genshinImg/轮播1.jpg"></a>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li>
+                                <a href="javascript:;"><img src="./genshinImg/轮播2.jpg"></a>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li>
+                                <a href="javascript:;"><img src="./genshinImg/轮播3.png"></a>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li>
+                                <a href="javascript:;"><img src="./genshinImg/轮播4.jpg"></a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination">
+                    </div>
+                </div>
+                <!-- 资质列表 -->
+                <div class="news_list">
+                    <ul class="news_list_ul">
+                        <li class="newsFirst">最新</li>
+                        <li>新闻</li>
+                        <li>公告</li>
+                        <li>活动</li>
+                        <div class="news-box"></div>
+                    </ul>
+                    <div class="tab_con">
+                        <ul class="item">
+                            <li>
+                                <a href="">
+                                    <p class="item_p">&nbsp;&nbsp;体悟、仁爱与识美之知</p>
+                                    <p class="item_p2">2023/02/24</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="item_p">&nbsp;&nbsp;生老三千疾，何处可问医</p>
+                                    <p class="item_p2">2023/02/24</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="item_p">《原神》「派梦的画作必胜客联动篇」联动主题表情包即将上架</p>
+                                    <p class="item_p2">2023/02/24</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="item_p">「赤沙游记」———《原神》新角色：迪西娅分享H5正式上线</p>
+                                    <p class="item_p2">2023/02/24</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <p class="item_p">《原神》3.5版本「七圣召唤」全新卡牌说明</p>
+                                    <p class="item_p2">2023/02/24</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="all_news">
+
+                        <a href="">
+                            <span class="jiahao">+</span>
+                            <span>查看全部资讯</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 国家展示 -->
+        <div class="city">
+            <ul>
+                <li>
+                    <div class="city__list-item">
+                        <a>
+                            <img src="genshinImg/蒙德.jpg" class="city_img">
+                            <img src="genshinImg/宝石.png" class="city_imgs">
+                            <p>蒙德城</p>
+                        </a>
+                        <div class="city__list-char" style="background-image: url(genshinImg/首页琴.png);"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="city__list-item">
+                        <a>
+                            <img src="genshinImg/璃月.jpg" class="city_img">
+                            <img src="genshinImg/宝石.png" class="city_imgs">
+                            <p>璃月城</p>
+                        </a>
+                        <div class="city__list-char" style="background-image: url(genshinImg/魈.png);"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="city__list-item">
+                        <a>
+                            <img src="genshinImg/稻妻.jpg" class="city_img">
+                            <img src="genshinImg/宝石.png" class="city_imgs">
+                            <p>稻妻城</p>
+                        </a>
+                        <div class="city__list-char" style="background-image: url(genshinImg/神里.png);"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="city__list-item">
+                        <a>
+                            <img src="genshinImg/须弥.jpg" class="city_img">
+                            <img src="genshinImg/宝石.png" class="city_imgs">
+                            <p>须弥城</p>
+                        </a>
+                        <div class="city__list-char" style="background-image: url(genshinImg/首页提娜里.png);"></div>
+                    </div>
+                </li>
+                <div class="city__list-item_last">
+                    <a>
+                        <img src="genshinImg/lastpng.jpg" class="city_img">
+                        <p>敬请期待</p>
+                    </a>
+                </div>
+            </ul>
+        </div>
+        <!-- 分享 -->
+        <div class="icon_nav">
+            <ul>
+                <li><a href=""><span class="iconfont icon-xinlangweibo"></span></a></li>
+                <li><a href=""><span class="iconfont icon-weixin"></span></a></li>
+                <li><a href=""><span class="iconfont icon-QQ"></span></a></li>
+                <li class="lastfen">
+                    <a href=""><span class="iconfont icon-rizhi"></span></a>
+                    <div class="fenxiang">
+                        <p>分享至</p>
+                        <ul>
+                            <li><a href=""><span class="iconfont icon-QQkongjian"></span></a></li>
+                            <li><a href=""><span class="iconfont icon-qq"></span></a></li>
+                            <li><a href=""><span class="iconfont icon-shejiaotubiao-06"></span></a></li>
+                            <li><a href=""><span class="iconfont icon-iconfontzhizuobiaozhunbduan36"></span></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <!-- 底部 -->
+        <footer class="footer">
+            <div class="footer-top wd12">  
+                <div class="footer-content">
+                    <div class="footer-logo">
+                        <div style="display: flex;align-items:center;">
+                            <img width="119.37px" height="42px" src="./genshinImg/mihayou.png" alt=""><span>|</span>
+                            <h1><img class="game-logo" width="110px" height="80.54px" src="./genshinImg/yuanshen.png" alt=""> </h1>
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="footer-info">
+                        <div class="footer-link">
+                            <div class="footer-protocol">
+                                <div><a href="" class="protocol" target="_blank">用户协议</a>| &nbsp;&nbsp;<a href=""
+                                        class="protocol" target="_blank">隐私政策</a>| &nbsp;&nbsp;<a href="" rel="nofollow"
+                                        class="protocol" target="_blank">儿童隐私政策</a>| &nbsp;&nbsp;<a href="" rel="nofollow"
+                                        class="protocol" target="_blank">自律公约</a>| &nbsp;&nbsp;<a class="protocol"
+                                        rel="nofollow" href="" target="_blank">成长关爱</a>| &nbsp;&nbsp;<a href=""
+                                        rel="nofollow" target="_blank" class="about-us protocol">关于我们</a>| &nbsp;&nbsp;<a
+                                        href="" rel="nofollow" target="_blank"
+                                        class="contract-us protocol">联系我们</a>| &nbsp;&nbsp;<a href="" rel="nofollow"
+                                        target="_blank" class="join-us protocol">加入我们</a><a href=""><span class="my-face"> ٩(๑>◡<๑)۶</span></a></div>
+                            </div>
+                        </div>
+                        <div class="footer-advice">
+                            <p class="advice-info">
+                                健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。 </p>
+                            <div class="inline-info">
+                                <div class="shiling-info"> <span> </span> </div> <a href="" rel="nofollow"
+                                    class="footer-filing-item" target="_blank">
+                                    沪公网安备31010402001113号 </a> <span class="split-line"> | </span> <span
+                                    class="footer-filing-item">增值电信业务经营许可证：沪B2-20190555</span>
+                            </div>
+                        </div>
+                        <div class="footer-filing">
+                            <div class="footer-filing-content"> <a href="" rel="nofollow" target="_blank"
+                                    class="footer-filing-item">沪ICP备19018275号-4</a><span class="split-line"> |
+                                </span> <span class="footer-filing-item">
+                                    沪网文〔2022〕1334-052号 </span><span class="split-line"> | </span> <span
+                                    class="footer-filing-item">国新出审【2019】2978号</span> </div>
+                            <div class="footer-filing-tip"> <span> 互联网违法不良信息举报邮箱: tousu@mihoyo.com </span>
+                                <span> 互联网违法不良信息举报电话: 021-60371750 （工作时间：每天10点 - 20点） </span>
+                            </div>
+                        </div>
+                        <div class="footer-tip"> 亲爱的市民朋友，上海警方反诈劝阻电话“962110”系专门针对避免您财产被骗受损而设，请您一旦收到来电，立即接听 </div>
+
+                        <div class="guanai-phone">未成年成长关爱热线：021-60371740 （服务时间：8:00-23:00）</div>
+                        <div class="mihoyo-copyright">© 2020 米哈游版权所有 | 上海米哈游影铁科技有限公司</div>
+                        <div class="complaint-phone">客服电话：400-666-6312</div>
+                        <div class="footer-icon"> <a href="" rel="nofollow" target="_blank"
+                                style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/shiming_1575020038_4113.png');">
+                            </a> <a href="" rel="nofollow" target="_blank"
+                                style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/jubao_1575020039_5071.png');">
+                            </a> <a href="https://www.12377.cn/" rel="nofollow" target="_blank"
+                                style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/202005/youhai_1589857356_1416.png');">
+                            </a> <a href="" rel="nofollow" target="_blank"
+                                style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/culture_1575020039_5478.png');">
+                            </a> <a href="javascript:void(0)" rel="nofollow"
+                                style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/e110_1575020039_7486.png');">
+                            </a> <a href="" rel="nofollow" target="_blank"
+                                style="background-image:url('https://uploadstatic.mihoyo.com/bh3/upload/officialsites/201911/zhizhao_1575020039_4362.png');">
+                            </a> </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
